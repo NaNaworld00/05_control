@@ -6,24 +6,21 @@
 int main(int argc, char *argv[]) {
 	
 	int i;
+	int a; // 절대값을 저장하는 변 
 	
 	printf("Input an integer : ");
 	scanf("%d", &i);
 	
 	if (i > 0)
 	{
-		printf("양 수 입 니 다 .");
+		a = i ;
 	 } 
-	else if (i == 0)
-	{
-		printf("0 입 니 다 .");
-	}
 	else
 	{
-		printf("음 수 입 니 다 .");
+		a = -i;
 	 } 
 	 
-	 
+	printf("절 대 값 은 %i 입 니 다 .", a); 
 	 
 	return 0;
 }
