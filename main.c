@@ -5,22 +5,27 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i;
-	int a; // 절대값을 저장하는 변 
+	char c;
 	
-	printf("Input an integer : ");
-	scanf("%d", &i);
+	printf("Input a char :");
+	scanf("%c", &c);
 	
-	if (i > 0)
+	if ('A' <= c && c <='Z')
 	{
-		a = i ;
-	 } 
+		printf("대 문 자 입 니 다 .");
+	}
+	else if ('a' <= c && c <='z')
+	{
+		printf("소 문 자 입 니 다 .");
+	}
+	else if ('0' <= c && c <='9')
+	{
+		printf("숫 자 입 니 다 .");
+	}
 	else
 	{
-		a = -i;
+		printf("기타 글자입니다 .");
 	 } 
-	 
-	printf("절 대 값 은 %i 입 니 다 .", a); 
 	 
 	return 0;
 }
